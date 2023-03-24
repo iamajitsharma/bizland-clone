@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+}
+
+:root {
+  --color-primary: #106eea;
+  --color-secondary: #3b8af2;
+  --color-variant: #e7f1fd;
+  --color-white: #fff;
+  --color-heading: #222;
+  --text-color: #444;
+  --font-open: "Open Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*------------------------------------------------------------------------
+1.) General Style
+------------------------------------------------------------------------*/
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-secondary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-poppins);
+}
+
+/*----------------------------------------------------------------
+Topbar
+---------------------------------------------------------*/
+.topbar {
+  background: var(--color-primary);
+  padding: 0.5rem 1.2rem;
+}
+
+.contact-info a,
+.socials a {
+  color: var(--color-white);
+  font-family: var(--font-open);
+  font-size: 1rem;
+}
