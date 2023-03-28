@@ -317,3 +317,89 @@ Featured Content
 .featured-services .box:hover .icon i {
   color: var(--color-white);
 }
+
+/*===========================================================================
+About Us
+==============================================================*/
+.about-content h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-heading);
+}
+
+.about-content p {
+  font-size: 0.9rem;
+  margin-top: 0.6rem;
+}
+
+.about-content ul {
+  padding: 0;
+}
+.about-content ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.about-content ul li i {
+  background: rgb(255, 255, 255);
+  padding: 1.4rem;
+  border-radius: 50%;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  color: var(--color-primary);
+  font-size: 1.4rem;
+}
+
+.about-content ul li div h5 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+.about-content ul li div p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(text-color);
+}
+
+/*======================================================
+Count
+==========================================================*/
+.count .count-box {
+  padding: 0.8rem;
+  background: #f1f6fe;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.count .count-box i {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-primary);
+  font-size: 2rem;
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--color-white);
+}
+
+.count .count-box span {
+  font-size: 2rem;
+  font-weight: 600;
+  display: block;
+  margin-top: 1.5rem;
+  color: var(--color-heading);
+}
+
+.count .count-box p {
+  font-size: 1rem;
+  color: var(--text-color);
+}
