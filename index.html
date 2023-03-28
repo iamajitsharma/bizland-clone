@@ -30,7 +30,7 @@
     <!--Topbar-->
     <section class="topbar">
       <div class="container d-flex justify-content-between align-items-center">
-        <div class="contact-info d-flex align-items-center gap-4">
+        <div class="top-contact-info d-flex align-items-center gap-4">
           <span class="d-flex align-items-center"
             ><i class="bx bx-envelope"></i>
             <a href="mailto:contact@test.com">contact@test.com</a></span
@@ -79,7 +79,7 @@
 
     <!--Hero Section-->
     <section id="hero" class="d-flex align-items-center">
-      <div class="container">
+      <div class="container" data-aos="zoom-out" data-aos-delay="200">
         <div class="hero-content">
           <h1>Welcome to Biz<span>Land</span></h1>
           <h4>
@@ -93,7 +93,7 @@
     <main id="main">
       <!--Featured Services Section-->
       <section id="featured-services" class="featured-services">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
           <div class="section-title">
             <h2>Our Services</h2>
             <h3>Check Out Our <span>Service</span></h3>
@@ -102,7 +102,7 @@
             <div
               class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
             >
-              <div class="box">
+              <div class="box" data-aos="fade-up" data-aos-delay="100">
                 <div class="icon">
                   <i class="bx bx-laptop"></i>
                 </div>
@@ -118,7 +118,7 @@
             <div
               class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
             >
-              <div class="box">
+              <div class="box" data-aos="fade-up" data-aos-delay="200">
                 <div class="icon">
                   <i class="bx bxs-radiation"></i>
                 </div>
@@ -134,7 +134,7 @@
             <div
               class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
             >
-              <div class="box">
+              <div class="box" data-aos="fade-up" data-aos-delay="300">
                 <div class="icon">
                   <i class="bx bx-pen"></i>
                 </div>
@@ -150,7 +150,7 @@
             <div
               class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
             >
-              <div class="box">
+              <div class="box" data-aos="fade-up" data-aos-delay="400">
                 <div class="icon">
                   <i class="bx bx-shape-square"></i>
                 </div>
@@ -169,18 +169,18 @@
       <!--Featured Services End-->
       <!--About Us-->
       <section id="about" class="about-us">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
           <div class="section-title">
             <h2>About</h2>
             <h3>Find Out More<span> About Us</span></h3>
           </div>
           <div class="row">
             <div class="col-md-6 col-lg-6">
-              <div class="about-img">
+              <div class="about-img" data-aos="flip-left">
                 <img src="./assets/img/about.jpg" class="img-fluid" alt="" />
               </div>
             </div>
-            <div class="col-md-6 col-lg-6">
+            <div class="col-md-6 col-lg-6" data-aos="flip-right">
               <div class="about-content">
                 <h3>Who We Are</h3>
                 <p>
@@ -234,9 +234,13 @@
       <!---About Us End-->
       <!--ProJect Count--->
       <section id="count" class="count">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
           <div class="row">
-            <div class="col-lg-3 col-md-6">
+            <div
+              class="col-lg-3 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <div class="count-box">
                 <i class="bx bx-smile"></i>
                 <span
@@ -248,7 +252,11 @@
                 <p>Happy Clients</p>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <div
+              class="col-lg-3 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <div class="count-box">
                 <i class="bx bxs-file-blank"></i>
                 <span
@@ -260,7 +268,11 @@
                 <p>Projects</p>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <div
+              class="col-lg-3 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               <div class="count-box">
                 <i class="bx bx-support"></i>
                 <span
@@ -272,7 +284,11 @@
                 <p>24/7 Support</p>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <div
+              class="col-lg-3 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
               <div class="count-box">
                 <i class="bx bxs-user-plus"></i>
                 <span
@@ -288,7 +304,327 @@
         </div>
       </section>
       <!--ProJect Count End--->
+
+      <!---Porfolio-->
+      <section id="porftlio" class="portfolio">
+        <div class="container">
+          <div class="section-title">
+            <h2>Portfolio</h2>
+            <h3>Check Our Master <span>Piece</span></h3>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-3 mb-4" data-aos="flip-left">
+              <div class="card" data-aos="zoom-in">
+                <img
+                  src="./assets/img/portfolio/portfolio-1.jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+                <div class="card-action">
+                  <a href="#"><i class="bx bx-link"></i></a>
+                  <a href="#"><i class="bx bx-package"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4" data-aos="flip-left">
+              <div class="card" data-aos="zoom-in">
+                <img
+                  src="./assets/img/portfolio/portfolio-2.jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+                <div class="card-action">
+                  <a href="#"><i class="bx bx-link"></i></a>
+                  <a href="#"><i class="bx bx-package"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4" data-aos="flip-left">
+              <div class="card">
+                <img
+                  src="./assets/img/portfolio/portfolio-3.jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+                <div class="card-action">
+                  <a href="#"><i class="bx bx-link"></i></a>
+                  <a href="#"><i class="bx bx-package"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4" data-aos="flip-left">
+              <div class="card" data-aos="zoom-in">
+                <img
+                  src="./assets/img/portfolio/portfolio-4.jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+                <div class="card-action">
+                  <a href="#"><i class="bx bx-link"></i></a>
+                  <a href="#"><i class="bx bx-package"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4" data-aos="flip-left">
+              <div class="card" data-aos="zoom-in">
+                <img
+                  src="./assets/img/portfolio/portfolio-5.jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+                <div class="card-action">
+                  <a href="#"><i class="bx bx-link"></i></a>
+                  <a href="#"><i class="bx bx-package"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4" data-aos="flip-left">
+              <div class="card" data-aos="zoom-in">
+                <img
+                  src="./assets/img/portfolio/portfolio-6.jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+                <div class="card-action">
+                  <a href="#"><i class="bx bx-link"></i></a>
+                  <a href="#"><i class="bx bx-package"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4" data-aos="flip-left">
+              <div class="card" data-aos="zoom-in">
+                <img
+                  src="./assets/img/portfolio/portfolio-7.jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+                <div class="card-action">
+                  <a href="#"><i class="bx bx-link"></i></a>
+                  <a href="#"><i class="bx bx-package"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4" data-aos="flip-left">
+              <div class="card" data-aos="zoom-in">
+                <img
+                  src="./assets/img/portfolio/portfolio-8.jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+                <div class="card-action">
+                  <a href="#"><i class="bx bx-link"></i></a>
+                  <a href="#"><i class="bx bx-package"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Contact Us-->
+      <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Contact</h2>
+            <h3>Contact <span>Us</span></h3>
+          </div>
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="contact-info">
+                <i class="bx bx-map"></i>
+                <h5>Our Address</h5>
+                <span>Kolkata West Bengal India</span>
+              </div>
+            </div>
+            <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+              <div class="contact-info">
+                <i class="bx bx-envelope"></i>
+                <h5>Email Us</h5>
+                <span>ajitsharma2021@gmail.com</span>
+              </div>
+            </div>
+            <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+              <div class="contact-info">
+                <i class="bx bx-phone-call"></i>
+                <h5>Call Us</h5>
+                <span>+91 9038764817</span>
+              </div>
+            </div>
+          </div>
+          <div class="row contact-form mt-5">
+            <div
+              class="col-md-6 col-lg-6"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30687789.431958966!2d64.445517267515!3d20.131208594858037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1680012992988!5m2!1sen!2sin"
+                style="border: 0; width: 100%; height: 100%"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div
+              class="col-md-6 col-lg-6"
+              data-aos="fade-left"
+              data-aos-delay="100"
+            >
+              <form action="" method="post" class="form">
+                <div class="row">
+                  <div class="col form-group">
+                    <input
+                      type="text"
+                      placeholder="Full Name"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="col form-group">
+                    <input
+                      type="text"
+                      placeholder="Email ID"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group mt-4">
+                  <input
+                    type="text"
+                    placeholder="Subject"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="form-group mt-4">
+                  <textarea
+                    placeholder="Write note"
+                    rows="5"
+                    class="form-control"
+                    required
+                  ></textarea>
+                </div>
+                <div class="text-center mt-4">
+                  <button type="submit" class="btn btn-primary">
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <!--Main End-->
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-newsletter">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <h4>Join Our Newsletter</h4>
+              <p>
+                Tamen quem nulla quae legam multos aute sint culpa legam noster
+                magna
+              </p>
+              <form action="" method="post">
+                <input type="email" name="email" /><input
+                  type="submit"
+                  value="Subscribe"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3>Ajit Sharma<span>.</span></h3>
+              <p>
+                Kolkata <br />
+                West Bengal<br />
+                India <br /><br />
+                <strong>Phone:</strong> +91 9038764817<br />
+                <strong>Email:</strong> ajitsharma2021@gmail.com<br />
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Home</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">About us</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Services</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Terms of service</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Privacy policy</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Web Design</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Web Development</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Product Management</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Marketing</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Graphic Design</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Social Networks</h4>
+              <p>
+                Cras fermentum odio eu feugiat lide par naso tierra videa magna
+                derita valies
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"
+                  ><i class="bx bxl-instagram"></i
+                ></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container py-4">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Ajit Sharma</span></strong
+          >. All Rights Reserved
+        </div>
+        <div class="credits">Designed by <a href="#">Ajit Sharma</a></div>
+      </div>
+    </footer>
+    <!-- End Footer -->
 
     <!--Vendor JS-->
     <script src="assets/vendor/purecounter/purecounter.js"></script>
