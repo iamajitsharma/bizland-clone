@@ -49,6 +49,15 @@ h6 {
   font-family: var(--font-poppins);
 }
 
+.btn-primary {
+  padding: 0.6rem 1.4rem;
+  background-color: var(--color-primary);
+  font-size: 0.9rem;
+  font-family: var(--font-poppins);
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+
 /*----------------------------------------------------------------
 Topbar
 ---------------------------------------------------------*/
@@ -103,7 +112,7 @@ Navigation Bar
 
 #navbar ul li a {
   color: var(--color-heading);
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
   position: relative;
   padding: 0;
@@ -138,6 +147,7 @@ Navigation Bar
   z-index: 99;
   transition: 0.3s;
   visibility: hidden;
+  opacity: 0;
 }
 
 #navbar .dropdown ul li {
@@ -178,4 +188,132 @@ Mobile Navigation
   #navbar ul {
     display: none;
   }
+}
+
+/*==========================================================
+Hero Section
+================================================================*/
+
+#hero {
+  background: url("../img/hero-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  color: var(--color-heading);
+  font-weight: 700;
+}
+
+.hero-content h1 span {
+  color: var(--color-primary);
+}
+
+.hero-content h4 {
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+.hero-content button {
+  margin-top: 1.5rem;
+}
+/*====================================================
+General Section
+======================================================*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: 8px 20px;
+  margin: 0;
+  background: #e7f1fd;
+  color: var(--color-primary);
+  display: inline-block;
+  transform: uppercase;
+  border-radius: 50px;
+}
+
+.section-title h3 {
+  margin: 15px 0 0 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.section-title h3 span {
+  color: var(--color-primary);
+}
+
+/*============================================================
+Featured Content
+==============================================================*/
+.featured-services {
+  width: 100%;
+}
+.featured-services .box {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  padding: 0.5rem;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 10px;
+  background: #ffffff;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.featured-services .box::before {
+  content: "";
+  position: absolute;
+  background-color: #cbe0fb;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 100%;
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.featured-services .box:hover::before {
+  background-color: var(--color-primary);
+  top: 0;
+  border-radius: 0px;
+}
+
+.box .icon i {
+  font-size: 4rem;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+.box .box-content h4 {
+  font-size: 1.2rem;
+  color: var(--color-heading);
+  line-height: 1;
+  padding-top: 1rem;
+}
+
+.box .box-content p {
+  font-size: 0.9rem;
+}
+
+.featured-services .box:hover .box-content h4,
+.featured-services .box:hover .box-content p,
+.featured-services .box:hover .icon i {
+  color: var(--color-white);
 }
