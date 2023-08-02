@@ -58,6 +58,86 @@ h6 {
   letter-spacing: 0.1rem;
 }
 
+/*------------------------------------------------------------------
+PreLoader
+--------------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  width: 60px;
+  height: 60px;
+  border: 6px solid var(--color-primary);
+  border-radius: 50%;
+  border-top-color: #cbe0fb;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*-------------------------------------------------------------
+Back To Top
+---------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  background: var(--color-primary);
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+  z-index: 996;
+}
+
+.back-to-top i {
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
 /*----------------------------------------------------------------
 Topbar
 ---------------------------------------------------------*/
@@ -65,7 +145,6 @@ Topbar
   background: var(--color-primary);
   padding: 0.5rem 1.2rem;
 }
-
 .top-contact-info a,
 .socials a {
   color: var(--color-white);
@@ -101,6 +180,7 @@ Navigation Bar
 #header .logo a {
   color: var(--color-heading);
 }
+
 #nabar ul {
   margin-right: auto;
 }
@@ -195,7 +275,7 @@ Hero Section
 ================================================================*/
 
 #hero {
-  background: url("../img/hero-bg.jpg");
+  background: url("../img/Building_BG.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -532,14 +612,14 @@ Contact Info
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #106eea;
+  background: var(--color-primary);
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 #footer .footer-newsletter form input[type="submit"]:hover {
-  background: #0d58ba;
+  background: var(--color-primary);
 }
 #footer .footer-top {
   padding: 60px 0 30px 0;
@@ -556,7 +636,7 @@ Contact Info
   font-weight: 700;
 }
 #footer .footer-top .footer-contact h3 span {
-  color: #106eea;
+  color: var(--color-primary);
 }
 #footer .footer-top .footer-contact p {
   font-size: 14px;
@@ -566,7 +646,7 @@ Contact Info
   color: #777777;
 }
 #footer .footer-top h4 {
-  font-size: 16px;
+  font-size: 0.9rem;
   font-weight: bold;
   color: #444444;
   position: relative;
@@ -582,7 +662,7 @@ Contact Info
 }
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #106eea;
+  color: var(--color-primary);
   font-size: 18px;
   line-height: 1;
 }
@@ -602,12 +682,12 @@ Contact Info
 }
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
-  color: #106eea;
+  color: var(--color-primary);
 }
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #106eea;
+  background: var(--color-primary);
   color: #fff;
   line-height: 1;
   padding: 8px 0;
